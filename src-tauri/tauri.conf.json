@@ -1,0 +1,71 @@
+{
+    "package": {
+        "productName": "MediaCalculator",
+        "version": "0.1.0"
+    },
+    "build": {
+        "distDir": "../dist",
+        "devPath": "http://localhost:3000",
+        "beforeDevCommand": "yarn dev",
+        "beforeBuildCommand": "yarn build"
+    },
+    "tauri": {
+        "bundle": {
+            "active": true,
+            "targets": "all",
+            "identifier": "com.IceCream.MediaCalculator",
+            "icon": [
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ],
+            "resources": [],
+            "externalBin": [],
+            "copyright": "",
+            "category": "DeveloperTool",
+            "shortDescription": "",
+            "longDescription": "",
+            "deb": {
+                "depends": [],
+                "useBootstrapper": false
+            },
+            "macOS": {
+                "frameworks": [],
+                "minimumSystemVersion": "10.13",
+                "useBootstrapper": false,
+                "exceptionDomain": "",
+                "signingIdentity": null,
+                "providerShortName": null,
+                "entitlements": null
+            },
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": ""
+            }
+        },
+        "updater": {
+            "active": false
+        },
+        "allowlist": {
+            "all": false,
+            "fs": {
+                "all": true
+            },
+            "dialog": {
+                "all": true
+            }
+        },
+        "windows": [
+            {
+                "title": "媒体资源计算器",
+                "width": 800,
+                "height": 600,
+                "resizable": false,
+                "fullscreen": false
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    }
+}

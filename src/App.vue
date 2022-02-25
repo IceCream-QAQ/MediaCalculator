@@ -91,7 +91,7 @@
             @click="ui.vFile = true"
             style="position: absolute;top: 20px;right: 20px"/>
         <hr color="#eee">
-        <div style="overflow: scroll">
+        <div>
             <div v-if="files.length === 0">
                 <div style="height: 80px"/>
                 <el-empty description="您还没有添加任何文件"></el-empty>

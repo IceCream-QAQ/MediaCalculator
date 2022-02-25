@@ -97,6 +97,7 @@
                 <el-empty description="您还没有添加任何文件"></el-empty>
             </div>
             <div v-else class="fic">
+                <div class="h"/>
                 <el-row class="fit">
                     <el-col :span="12" align="middle" justify="center">
                         文件名
@@ -111,32 +112,33 @@
                         操作
                     </el-col>
                 </el-row>
-                <div class="h"/>
-                <el-row v-for="item in files" class="fileItem">
-                    <el-col :span="1" align="middle" justify="end">
-                        <el-icon style="padding-top: 7px">
-                            <document/>
-                        </el-icon>
-                    </el-col>
-                    <el-col :span="15" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+                <el-scrollbar height="490px">
+                    <el-row v-for="item in files" class="fileItem">
+                        <el-col :span="1" align="middle" justify="end">
+                            <el-icon style="padding-top: 7px">
+                                <document/>
+                            </el-icon>
+                        </el-col>
+                        <el-col :span="15" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
                         <span class="fip" :title="item.name">
                             {{ item.name }}
                         </span>
-                    </el-col>
-                    <el-col :span="4" align="middle" justify="center">
+                        </el-col>
+                        <el-col :span="4" align="middle" justify="center">
                         <span class="fip">
                             {{ item.time }}
                         </span>
-                    </el-col>
-                    <el-col :span="4" align="middle" justify="center">
-                        <el-popconfirm title="您确定要删除这条记录吗?" @confirm="removeFile(item)">
-                            <template #reference>
-                                <el-button icon="delete" size="small" circle type="info" plain></el-button>
+                        </el-col>
+                        <el-col :span="4" align="middle" justify="center">
+                            <el-popconfirm title="您确定要删除这条记录吗?" @confirm="removeFile(item)">
+                                <template #reference>
+                                    <el-button icon="delete" size="small" circle type="info" plain></el-button>
 
-                            </template>
-                        </el-popconfirm>
-                    </el-col>
-                </el-row>
+                                </template>
+                            </el-popconfirm>
+                        </el-col>
+                    </el-row>
+                </el-scrollbar>
             </div>
         </div>
     </el-drawer>
@@ -390,7 +392,7 @@ p {
 }
 
 .fic {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .fileItem {

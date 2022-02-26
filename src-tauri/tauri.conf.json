@@ -41,7 +41,7 @@
                 "wix": {
                     "language": {
                         "zh-CN": {
-                            "localePath": "./wix/locales/pt-BR.wxl"
+                            "localePath": "wix/locales/pt-BR.wxl"
                         }
                     }
                 },

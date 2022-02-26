@@ -40,9 +40,8 @@
             "windows": {
                 "wix": {
                     "language": {
-                        "en-US": null,
                         "zh-CN": {
-                            "localePath": "./wix/locales/pt-BR.wxl"
+                            "localePath": "./wix/locales/zh-CN.wxl"
                         }
                     }
                 },

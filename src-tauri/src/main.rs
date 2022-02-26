@@ -12,7 +12,7 @@ fn print(message: String) {
 
 #[tauri::command]
 fn music_time(path: String) -> i32 {
-    println!("OnMusicPath: {}",path);
+    println!("OnMusicPath: {}", path);
 
     let tagged_file = read_from_path(path, true).unwrap();
 

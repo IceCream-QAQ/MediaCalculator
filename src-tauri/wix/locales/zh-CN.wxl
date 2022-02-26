@@ -1,0 +1,6 @@
+<WixLocalization Culture="en-US" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+    <String Id="LaunchApp">启动 媒体资源计算器</String>
+    <String Id="DowngradeErrorMessage">一个更新的版本已经安装了。</String>
+    <String Id="PathEnvVarFeature">将 媒体资源计算器 添加到环境变量。</String>
+    <String Id="InstallAppFeature">安装媒体资源计算器。</String>
+</WixLocalization>

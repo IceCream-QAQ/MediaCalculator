@@ -38,6 +38,13 @@
                 "entitlements": null
             },
             "windows": {
+                "wix": {
+                    "language": {
+                        "zh-CN": {
+                            "localePath": "./wix/locales/pt-BR.wxl"
+                        }
+                    }
+                },
                 "certificateThumbprint": null,
                 "digestAlgorithm": "sha256",
                 "timestampUrl": ""

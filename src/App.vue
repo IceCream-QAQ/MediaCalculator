@@ -115,7 +115,7 @@
                 <el-scrollbar height="490px">
                     <el-row v-for="item in files" class="fileItem">
                         <el-col :span="1" align="middle" justify="end">
-                            <el-icon style="padding-top: 7px">
+                            <el-icon style="padding-top: 9px">
                                 <document/>
                             </el-icon>
                         </el-col>
@@ -133,7 +133,6 @@
                             <el-popconfirm title="您确定要删除这条记录吗?" @confirm="removeFile(item)">
                                 <template #reference>
                                     <el-button icon="delete" size="small" circle type="info" plain></el-button>
-
                                 </template>
                             </el-popconfirm>
                         </el-col>
